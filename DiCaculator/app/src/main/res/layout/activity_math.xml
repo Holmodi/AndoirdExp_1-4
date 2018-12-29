@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    tools:context="com.example.xwy.calculator.math">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/center1"
+            android:textSize="20sp"
+            android:text="conversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <EditText
+            android:id="@+id/meter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/center1"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/meter"
+            android:textSize="20sp"
+            android:text="米(m)"/>
+        
+        <EditText
+            android:id="@+id/foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/center1"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/foot"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:text="英尺(ft)"/>
+
+        <Button
+            android:id="@+id/cleanmath"
+            android:text="clean"
+            android:textSize="20sp"
+            android:layout_below="@id/center1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/center2"
+            android:text="triangle"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/cos"
+            android:hint="cos"
+            android:textSize="30dp"
+            android:layout_toLeftOf="@id/center2"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sin"
+            android:hint="sin"
+            android:textSize="30dp"
+            android:layout_toLeftOf="@id/center2"
+            android:layout_above="@id/cos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/tan"
+            android:hint="tan"
+            android:textSize="30dp"
+            android:layout_toLeftOf="@id/center2"
+            android:layout_below="@id/cos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/arccos"
+            android:hint="arccos"
+            android:textSize="30dp"
+            android:layout_toRightOf="@id/center2"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/arcsin"
+            android:hint="arcsin"
+            android:textSize="30dp"
+            android:layout_toRightOf="@id/center2"
+            android:layout_above="@id/arccos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/arctan"
+            android:hint="arctan"
+            android:textSize="30dp"
+            android:layout_toRightOf="@id/center2"
+            android:layout_below="@id/arccos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>
